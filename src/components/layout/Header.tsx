@@ -63,7 +63,7 @@ export function Header({ locale }: { locale: string }) {
   };
 
   return (
-    <header className="relative z-50 border-b border-white/10 bg-[#354a3c] text-[#f5f0e7]">
+    <header className="relative z-50 border-b border-white/10 bg-[#1f352c] text-[#f5f0e7]">
       <div className="container-shell grid min-h-[76px] grid-cols-[1fr_auto_1fr] items-center py-3">
         <div className="flex items-center gap-6">
           <button
@@ -92,7 +92,7 @@ export function Header({ locale }: { locale: string }) {
           </Link>
           <nav aria-label={t("gallery")} className="hidden items-center gap-6 text-xs font-medium uppercase tracking-[0.12em] xl:flex">
             <Link href={galleryHref} className="opacity-90 transition hover:text-[#d4c2a5]">{t("gallery")}</Link>
-            <Link href={`${homeHref}#contact`} className="rounded-full border border-[#d4c2a5]/70 px-4 py-2.5 text-[#f5f0e7] transition hover:bg-[#d4c2a5] hover:text-[#354a3c]">{t("contact")}</Link>
+            <Link href={`${homeHref}#contact`} className="opacity-90 transition hover:text-[#d4c2a5]">{t("contact")}</Link>
           </nav>
           <div aria-label={t("language")} className="hidden items-center gap-2 border-l border-white/20 pl-4 text-[0.68rem] xl:flex">
             {(["sr", "en", "hu", "ru"] as const).map((item) => (
@@ -106,6 +106,7 @@ export function Header({ locale }: { locale: string }) {
               </Link>
             ))}
           </div>
+          <VillaLineArt />
         </div>
       </div>
 
@@ -139,5 +140,20 @@ export function Header({ locale }: { locale: string }) {
         </div>
       ) : null}
     </header>
+  );
+}
+
+function VillaLineArt() {
+  return (
+    <span aria-hidden="true" className="hidden h-11 w-[68px] items-center justify-center text-[#d4c2a5]/80 xl:flex">
+      <svg viewBox="0 0 136 80" fill="none" className="h-full w-full">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
+          <path d="m9 37 25-21 25 21 24-21 44 36" />
+          <path d="M21 33v35h94V47M59 37v31M33 44h13v13H33zM80 43h14v12H80z" />
+          <path d="M69 68V51c0-8 12-8 12 0v17M15 68h106" />
+          <path d="M41 30V20h8v17M99 35h7" />
+        </g>
+      </svg>
+    </span>
   );
 }
