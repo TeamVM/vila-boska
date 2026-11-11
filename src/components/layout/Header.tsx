@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import type { MouseEvent } from "react";
 import { Camera, Globe, Menu, Phone, X } from "lucide-react";
@@ -50,22 +50,20 @@ const localizedTarget = (currentLocale: string, targetLocale: string, pathname: 
 export function Header({ locale }: { locale: string }) {
   const t = useTranslations("nav");
   const pathname = usePathname();
+  const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const homeHref = localeRoutes[locale as keyof typeof localeRoutes]?.home ?? "/sr";
   const offerHref = localeRoutes[locale as keyof typeof localeRoutes]?.accommodation ?? "/sr/smestaj";
   const galleryHref = localeRoutes[locale as keyof typeof localeRoutes]?.gallery ?? "/sr/galerija";
-  const preserveLocaleLocation = (event: MouseEvent<HTMLAnchorElement>, target: string) => {
-    const suffix = `${window.location.search}${window.location.hash}`;
-    if (suffix) {
-      event.preventDefault();
-      window.location.assign(`${target}${suffix}`);
-    }
+  const switchLanguage = (event: MouseEvent<HTMLAnchorElement>, target: string) => {
+    event.preventDefault();
+    router.push(`${target}${window.location.search}`, { scroll: false });
   };
-
   return (
     <header className="relative z-50 border-b border-white/10 bg-[#1f352c] text-[#f5f0e7]">
       <div className="container-shell grid min-h-[76px] grid-cols-[1fr_auto_1fr] items-center py-3">
         <div className="flex items-center gap-6">
+          <VillaLineArt />
           <button
             type="button"
             aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
@@ -99,14 +97,13 @@ export function Header({ locale }: { locale: string }) {
               <Link
                 key={item}
                 href={localizedTarget(locale, item, pathname)}
-                onClick={(event) => preserveLocaleLocation(event, localizedTarget(locale, item, pathname))}
+                onClick={(event) => switchLanguage(event, localizedTarget(locale, item, pathname))}
                 className={`transition ${locale === item ? "text-[#d4c2a5]" : "opacity-80 hover:text-[#d4c2a5]"}`}
               >
                 {item.toUpperCase()}
               </Link>
             ))}
           </div>
-          <VillaLineArt />
         </div>
       </div>
 
@@ -124,7 +121,7 @@ export function Header({ locale }: { locale: string }) {
                   href={localizedTarget(locale, item, pathname)}
                   onClick={(event) => {
                     setMobileOpen(false);
-                    preserveLocaleLocation(event, localizedTarget(locale, item, pathname));
+                    switchLanguage(event, localizedTarget(locale, item, pathname));
                   }}
                   className={`${locale === item ? "text-[#d4c2a5]" : "opacity-80"}`}
                 >
@@ -146,12 +143,13 @@ export function Header({ locale }: { locale: string }) {
 function VillaLineArt() {
   return (
     <span aria-hidden="true" className="hidden h-11 w-[68px] items-center justify-center text-[#d4c2a5]/80 xl:flex">
-      <svg viewBox="0 0 136 80" fill="none" className="h-full w-full">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5">
-          <path d="m9 37 25-21 25 21 24-21 44 36" />
-          <path d="M21 33v35h94V47M59 37v31M33 44h13v13H33zM80 43h14v12H80z" />
-          <path d="M69 68V51c0-8 12-8 12 0v17M15 68h106" />
-          <path d="M41 30V20h8v17M99 35h7" />
+      <svg viewBox="0 0 140 72" fill="none" className="h-full w-full">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.35">
+          <path d="M10 30 70 8l60 22M16 33h108M22 33v27h96V33" />
+          <path d="M29 33v27M111 33v27M45 37h15v15H45zM80 37h15v15H80zM52.5 37v15M87.5 37v15M45 44.5h15M80 44.5h15" />
+          <path d="M61 60V44a9 9 0 0 1 18 0v16M70 44v16M56 32l14-10 14 10M62 29h16" />
+          <circle cx="70" cy="28" r="2" />
+          <path d="M17 61h106M23 65h94M34 20v-7h6v5" />
         </g>
       </svg>
     </span>
