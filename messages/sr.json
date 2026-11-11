@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "title": "Vila Boska Palić",
+    "description": "Boutique smeštaj u Paliću, na 250 m od Palićkog jezera, na adresi Vikend Naselje 280."
+  },
+  "nav": {
+    "about": "O nama",
+    "offer": "Ponuda",
+    "gallery": "Galerija",
+    "contact": "Kontakt",
+    "language": "SR | EN | HU | RU",
+    "brand": "VILA BOSKA",
+    "brandLocation": "PALIĆ",
+    "openMenu": "Otvori meni",
+    "closeMenu": "Zatvori meni",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "hero": {
+    "title": "Vila Boska Palić",
+    "subtitle": "Vaš savršen odmor na samo 250m od jezera.",
+    "primaryCta": "Pogledajte ponudu",
+    "secondaryCta": "Kontaktirajte nas",
+    "imageAlt": "Eksterijer vile Vila Boska sa bazenom"
+  },
+  "about": {
+    "title": "O nama",
+    "text": "Objekat Vila Boska Palić sa pogledom na vrt se nalazi u gradu Palić i nudi restoran, zajednički salon, bar, vrt, sezonski bazen na otvorenom i terasu. WiFi i privatni parking u objektu Vila Boska Palic mogu da se koriste besplatno. Neke od jedinica imaju flat-screen televizor sa kablovskim kanalima, potpuno opremljenu kuhinju sa frižiderom, kao i sopstveno kupatilo sa tušem i besplatnim toaletnim priborom. Objekat Vila Boska Palic nudi pribor za roštilj.",
+    "cta": "Saznajte više",
+    "imageAlt": "Eksterijer vile Vila Boska"
+  },
+  "amenities": {
+    "distance": "250m od Paličkog jezera",
+    "parking": "Besplatan parking",
+    "pool": "Sezonski bazen",
+    "wifi": "Besplatan Wi‑Fi"
+  },
+  "accommodation": {
+    "pageTitle": "Naša ponuda",
+    "details": "Detaljnije",
+    "typeStudio": "Studio",
+    "typeApartment": "Apartman",
+    "typeRoom": "Soba",
+    "typeDuplex": "Duplex",
+    "bedsLabel": "Kreveti",
+    "capacityLabel": "Kapacitet",
+    "capacity": "Do {count} gostiju",
+    "booking": "Rezervišite na Booking.com",
+    "inquiry": "Pošaljite upit",
+    "photo": "Fotografija {current} od {total}",
+    "previousImage": "Prethodna fotografija",
+    "nextImage": "Sledeća fotografija",
+    "closeDetails": "Zatvori detalje smeštaja",
+    "beds": {
+      "double": "1 bračni krevet",
+      "child": "1 pomoćni dečji krevet",
+      "twoSingles": "2 odvojena kreveta",
+      "threeSingles": "3 odvojena kreveta",
+      "extraDouble": "1 dodatni bračni krevet",
+      "single": "1 odvojeni krevet"
+    },
+    "units": {
+      "studio-1": "Studio 1",
+      "studio-2": "Studio 2",
+      "apartman-3": "Apartman 3",
+      "apartman-4": "Apartman 4",
+      "soba-5": "Soba 5",
+      "soba-6": "Soba 6",
+      "soba-7": "Soba 7",
+      "soba-9": "Soba 9",
+      "soba-10": "Soba 10",
+      "apartman-12": "Apartman 12",
+      "duplex-1": "Duplex 1",
+      "duplex-2": "Duplex 2"
+    }
+  },
+  "featured": {
+    "title": "Naša ponuda",
+    "subtitle": "Izaberite smestajnu jedinicu koja vam najviše odgovara",
+    "button": "Pogledajte kompletnu ponudu"
+  },
+  "gallery": {
+    "title": "Galerija",
+    "subtitle": "Upoznajte našu vilu kroz fotografije",
+    "button": "Pogledajte galeriju",
+    "pageTitle": "Galerija",
+    "imageAlt": "Fotografija vile Vila Boska",
+    "close": "Zatvori galeriju",
+    "previousImage": "Prethodna fotografija",
+    "nextImage": "Sledeća fotografija",
+    "photoCount": "Fotografija {current} od {total}"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "guarantee": "Garantujemo savršen odmor\n4 objekta 12 smeštajnih jedinica",
+    "location": "Nalazimo se 250m od jezera",
+    "phone": "Kontaktirajte nas rezervacije:",
+    "formTitle": "Pošaljite upit",
+    "name": "Ime i prezime",
+    "email": "Email adresa",
+    "unit": "Smestajna jedinica",
+    "adults": "Broj odraslih",
+    "children": "Broj dece",
+    "message": "Poruka",
+    "consent": "Slažem se sa uslovima privatnosti",
+    "submit": "Pošaljite upit",
+    "mapButton": "Otvori u Google Maps",
+    "directions": "Uputstva za dolazak",
+    "mapTitle": "Mapa lokacije vile Vila Boska Palić",
+    "addressLabel": "Adresa",
+    "address": "Vila Boska Palić\nVikend Naselje 280\n24413 Palić\nSerbia",
+    "distance": "250 m od Palićkog jezera",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Email",
+    "fullName": "Ime i prezime",
+    "namePlaceholder": "Vaše ime i prezime",
+    "emailPlaceholder": "vas@email.com",
+    "unitPlaceholder": "Izaberite smeštajnu jedinicu",
+    "messagePlaceholder": "Napišite nam poruku",
+    "required": "obavezno",
+    "submitting": "Slanje u toku…",
+    "privacyConsent": "Prihvatam politiku privatnosti i želim da me kontaktirate u vezi sa rezervacijom.",
+    "success": "Vaš upit je uspešno poslat.",
+    "errorGeneric": "Upit nije moguće obraditi. Pokušajte ponovo kasnije.",
+    "validation": {
+      "email": "Unesite ispravnu email adresu.",
+      "unit": "Izaberite smeštajnu jedinicu.",
+      "adults": "Unesite ispravan broj odraslih osoba.",
+      "children": "Unesite ispravan broj dece.",
+      "message": "Poruka mora imati najmanje 10 karaktera.",
+      "consent": "Potrebna je saglasnost sa politikom privatnosti.",
+      "tooManyAdults": "Za {unit} je dozvoljeno najviše {count} odraslih osoba.",
+      "tooManyChildren": "Za {unit} je dozvoljeno najviše {count} dodatnih dečjih mesta."
+    },
+    "server": {
+      "invalidRequest": "Podaci nisu ispravni. Proverite obrazac.",
+      "invalidUnit": "Izaberite važeću smeštajnu jedinicu.",
+      "adultsCapacity": "Izabrana smeštajna jedinica prima najviše {count} odraslih osoba.",
+      "childrenCapacity": "Izabrana smeštajna jedinica prima najviše {count} dodatnih dečjih mesta.",
+      "rateLimited": "Sačekajte pre slanja sledećeg upita.",
+      "notConfigured": "Email servis trenutno nije podešen. Kontaktirajte nas telefonom ili emailom.",
+      "emailFailed": "Email nije moguće poslati. Pokušajte ponovo kasnije."
+    }
+  },
+  "footer": {
+    "brand": "Vila Boska",
+    "subBrand": "Palić"
+  }
+}

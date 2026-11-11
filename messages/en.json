@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "title": "Vila Boska Palić",
+    "description": "Boutique accommodation in Palić, 250 m from Lake Palić, at Vikend Naselje 280."
+  },
+  "nav": {
+    "about": "About",
+    "offer": "Accommodation",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "language": "SR | EN | HU | RU",
+    "brand": "VILA BOSKA",
+    "brandLocation": "PALIĆ",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "hero": {
+    "title": "Vila Boska Palić",
+    "subtitle": "Your perfect getaway just 250m from the lake.",
+    "primaryCta": "View accommodation",
+    "secondaryCta": "Contact us",
+    "imageAlt": "Vila Boska exterior with swimming pool"
+  },
+  "about": {
+    "title": "About us",
+    "text": "Vila Boska Palić with a garden view is located in the town of Palić and offers a restaurant, shared lounge, bar, garden, outdoor seasonal pool and terrace. Free WiFi and private parking at Vila Boska Palic are available. Some units feature a flat-screen TV with cable channels, a fully equipped kitchen with a fridge, and a private bathroom with a shower and free toiletries. Vila Boska Palic also provides barbecue facilities.",
+    "cta": "Learn more",
+    "imageAlt": "Vila Boska exterior"
+  },
+  "amenities": {
+    "distance": "250m from Lake Palić",
+    "parking": "Free parking",
+    "pool": "Seasonal pool",
+    "wifi": "Free Wi‑Fi"
+  },
+  "accommodation": {
+    "pageTitle": "Our accommodation",
+    "details": "View details",
+    "typeStudio": "Studio",
+    "typeApartment": "Apartment",
+    "typeRoom": "Room",
+    "typeDuplex": "Duplex",
+    "bedsLabel": "Beds",
+    "capacityLabel": "Guest capacity",
+    "capacity": "Up to {count} guests",
+    "booking": "Book on Booking.com",
+    "inquiry": "Send an inquiry",
+    "photo": "Photo {current} of {total}",
+    "previousImage": "Previous photo",
+    "nextImage": "Next photo",
+    "closeDetails": "Close accommodation details",
+    "beds": {
+      "double": "1 double bed",
+      "child": "1 additional child bed",
+      "twoSingles": "2 single beds",
+      "threeSingles": "3 single beds",
+      "extraDouble": "1 additional double bed",
+      "single": "1 single bed"
+    },
+    "units": {
+      "studio-1": "Studio 1",
+      "studio-2": "Studio 2",
+      "apartman-3": "Apartment 3",
+      "apartman-4": "Apartment 4",
+      "soba-5": "Room 5",
+      "soba-6": "Room 6",
+      "soba-7": "Room 7",
+      "soba-9": "Room 9",
+      "soba-10": "Room 10",
+      "apartman-12": "Apartment 12",
+      "duplex-1": "Duplex 1",
+      "duplex-2": "Duplex 2"
+    }
+  },
+  "featured": {
+    "title": "Our accommodation",
+    "subtitle": "Choose the unit that suits you best",
+    "button": "View full offer"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Explore our villa through photography",
+    "button": "View gallery",
+    "pageTitle": "Gallery",
+    "imageAlt": "Vila Boska villa photograph",
+    "close": "Close gallery",
+    "previousImage": "Previous photo",
+    "nextImage": "Next photo",
+    "photoCount": "Photo {current} of {total}"
+  },
+  "contact": {
+    "title": "Contact",
+    "guarantee": "We guarantee a perfect stay\n4 properties | 12 accommodation units",
+    "location": "We are located 250m from the lake",
+    "phone": "Contact for reservations:",
+    "formTitle": "Send inquiry",
+    "name": "Full name",
+    "email": "Email address",
+    "unit": "Accommodation unit",
+    "adults": "Number of adults",
+    "children": "Number of children",
+    "message": "Message",
+    "consent": "I agree to the privacy policy",
+    "submit": "Send inquiry",
+    "mapButton": "Open in Google Maps",
+    "directions": "Get directions",
+    "mapTitle": "Map showing Vila Boska Palić",
+    "addressLabel": "Address",
+    "address": "Vila Boska Palić\nVikend Naselje 280\n24413 Palić\nSerbia",
+    "distance": "250 m from Lake Palić",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "fullName": "Full name",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "you@example.com",
+    "unitPlaceholder": "Select an accommodation",
+    "messagePlaceholder": "Write us a message",
+    "required": "required",
+    "submitting": "Sending…",
+    "privacyConsent": "I agree to the privacy policy and consent to being contacted about my reservation.",
+    "success": "Your inquiry has been sent successfully.",
+    "errorGeneric": "We could not process your inquiry. Please try again later.",
+    "validation": {
+      "email": "Enter a valid email address.",
+      "unit": "Select an accommodation.",
+      "adults": "Enter a valid number of adults.",
+      "children": "Enter a valid number of children.",
+      "message": "Your message must contain at least 10 characters.",
+      "consent": "Privacy consent is required.",
+      "tooManyAdults": "{unit} allows up to {count} adults.",
+      "tooManyChildren": "{unit} allows up to {count} additional child places."
+    },
+    "server": {
+      "invalidRequest": "The submitted details are invalid. Please check the form.",
+      "invalidUnit": "Select a valid accommodation.",
+      "adultsCapacity": "This accommodation allows up to {count} adults.",
+      "childrenCapacity": "This accommodation allows up to {count} additional child places.",
+      "rateLimited": "Please wait before sending another inquiry.",
+      "notConfigured": "The email service is not configured. Please contact us by phone or email.",
+      "emailFailed": "The email could not be sent. Please try again later."
+    }
+  },
+  "footer": {
+    "brand": "Vila Boska",
+    "subBrand": "Palić"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "title": "Vila Boska Palić",
+    "description": "Különleges szállás Palićon, 250 méterre a Palić-tótól, a Vikend Naselje 280. szám alatt."
+  },
+  "nav": {
+    "about": "Rólunk",
+    "offer": "Szállás",
+    "gallery": "Galéria",
+    "contact": "Kapcsolat",
+    "language": "SR | EN | HU | RU",
+    "brand": "VILA BOSKA",
+    "brandLocation": "PALIĆ",
+    "openMenu": "Menü megnyitása",
+    "closeMenu": "Menü bezárása",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "hero": {
+    "title": "Vila Boska Palić",
+    "subtitle": "Ideális nyaralása csak 250 méterre a tóparttól.",
+    "primaryCta": "Szállás megtekintése",
+    "secondaryCta": "Kapcsolat",
+    "imageAlt": "A Vila Boska külső része medencével"
+  },
+  "about": {
+    "title": "Rólunk",
+    "text": "A kertre néző Vila Boska Palić szállás a Palić városában található, és éttermet, közös szobát, bárhelyiséget, kertet, szezonális szabadtéri medencét és teraszt kínál. A Vila Boska Palic ingyenes WiFi-t és magánházi parkolást biztosít. Néhány egységben síkképernyős televízió található, teljesen felszerelt konyhával, hűtőszekrénnyel, valamint saját fürdőszobával zuhanyzójával és ingyenes tisztálkodási cikkekkel. A Vila Boska Palic grillezési lehetőséget is biztosít.",
+    "cta": "Tudjon meg többet",
+    "imageAlt": "A Vila Boska külső része"
+  },
+  "amenities": {
+    "distance": "250m a Palić-tótól",
+    "parking": "Ingyenes parkolás",
+    "pool": "Szezonális medence",
+    "wifi": "Ingyenes Wi‑Fi"
+  },
+  "accommodation": {
+    "pageTitle": "Szállásaink",
+    "details": "Részletek",
+    "typeStudio": "Stúdió",
+    "typeApartment": "Apartman",
+    "typeRoom": "Szoba",
+    "typeDuplex": "Duplex",
+    "bedsLabel": "Ágyak",
+    "capacityLabel": "Férőhelyek",
+    "capacity": "Legfeljebb {count} vendég",
+    "booking": "Foglalás a Booking.com-on",
+    "inquiry": "Érdeklődés küldése",
+    "photo": "{current}. fénykép / {total}",
+    "previousImage": "Előző fénykép",
+    "nextImage": "Következő fénykép",
+    "closeDetails": "Szállás részleteinek bezárása",
+    "beds": {
+      "double": "1 franciaágy",
+      "child": "1 pótágy gyermeknek",
+      "twoSingles": "2 különálló ágy",
+      "threeSingles": "3 különálló ágy",
+      "extraDouble": "1 további franciaágy",
+      "single": "1 különálló ágy"
+    },
+    "units": {
+      "studio-1": "Stúdió 1",
+      "studio-2": "Stúdió 2",
+      "apartman-3": "Apartman 3",
+      "apartman-4": "Apartman 4",
+      "soba-5": "5. szoba",
+      "soba-6": "6. szoba",
+      "soba-7": "7. szoba",
+      "soba-9": "9. szoba",
+      "soba-10": "10. szoba",
+      "apartman-12": "Apartman 12",
+      "duplex-1": "Duplex 1",
+      "duplex-2": "Duplex 2"
+    }
+  },
+  "featured": {
+    "title": "Szállásaink",
+    "subtitle": "Válassza ki a legjobban illő egységet",
+    "button": "Teljes kínálat megtekintése"
+  },
+  "gallery": {
+    "title": "Galéria",
+    "subtitle": "Fedezze fel villánkat fényképeken keresztül",
+    "button": "Galéria megtekintése",
+    "pageTitle": "Galéria",
+    "imageAlt": "Fénykép a Vila Boska villáról",
+    "close": "Galéria bezárása",
+    "previousImage": "Előző fénykép",
+    "nextImage": "Következő fénykép",
+    "photoCount": "{current}. fénykép / {total}"
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "guarantee": "Garantáljuk a tökéletes nyaralást\n4 objektum | 12 szállás",
+    "location": "A tó 250 méterre van",
+    "phone": "Foglalásért forduljon hozzánk:",
+    "formTitle": "Üzenet küldése",
+    "name": "Teljes név",
+    "email": "E-mail cím",
+    "unit": "Szállás egység",
+    "adults": "Felnőttek száma",
+    "children": "Gyermekek száma",
+    "message": "Üzenet",
+    "consent": "Elfogadom az adatvédelmi feltételeket",
+    "submit": "Üzenet küldése",
+    "mapButton": "Megnyitás a Google Térképen",
+    "directions": "Útvonaltervezés",
+    "mapTitle": "A Vila Boska Palić térképe",
+    "addressLabel": "Cím",
+    "address": "Vila Boska Palić\nVikend Naselje 280\n24413 Palić\nSerbia",
+    "distance": "250 m-re a Palić-tótól",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-mail",
+    "fullName": "Teljes név",
+    "namePlaceholder": "Az Ön teljes neve",
+    "emailPlaceholder": "email@pelda.hu",
+    "unitPlaceholder": "Válasszon szállásegységet",
+    "messagePlaceholder": "Írjon nekünk üzenetet",
+    "required": "kötelező",
+    "submitting": "Küldés…",
+    "privacyConsent": "Elfogadom az adatvédelmi szabályzatot, és hozzájárulok, hogy a foglalással kapcsolatban megkeressenek.",
+    "success": "Érdeklődését sikeresen elküldtük.",
+    "errorGeneric": "A kérés nem dolgozható fel. Kérjük, próbálja újra később.",
+    "validation": {
+      "email": "Adjon meg érvényes e-mail-címet.",
+      "unit": "Válasszon szállásegységet.",
+      "adults": "Adja meg a felnőttek érvényes számát.",
+      "children": "Adja meg a gyermekek érvényes számát.",
+      "message": "Az üzenet legalább 10 karakter legyen.",
+      "consent": "Az adatvédelmi hozzájárulás szükséges.",
+      "tooManyAdults": "A(z) {unit} legfeljebb {count} felnőttet fogad.",
+      "tooManyChildren": "A(z) {unit} legfeljebb {count} további gyermekhelyet biztosít."
+    },
+    "server": {
+      "invalidRequest": "A megadott adatok érvénytelenek. Ellenőrizze az űrlapot.",
+      "invalidUnit": "Válasszon érvényes szállásegységet.",
+      "adultsCapacity": "Ez a szállás legfeljebb {count} felnőttet fogad.",
+      "childrenCapacity": "Ez a szállás legfeljebb {count} további gyermekhelyet biztosít.",
+      "rateLimited": "Kérjük, várjon a következő érdeklődés elküldése előtt.",
+      "notConfigured": "Az e-mail-szolgáltatás nincs beállítva. Kérjük, telefonon vagy e-mailben vegye fel velünk a kapcsolatot.",
+      "emailFailed": "Az e-mail nem küldhető el. Kérjük, próbálja újra később."
+    }
+  },
+  "footer": {
+    "brand": "Vila Boska",
+    "subBrand": "Palić"
+  }
+}

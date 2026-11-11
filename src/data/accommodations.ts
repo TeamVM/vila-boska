@@ -1,0 +1,203 @@
+import { accommodationImages } from "@/data/image-manifest";
+
+export type Accommodation = {
+  id: string;
+  slug: string;
+  name: string;
+  type: string;
+  bedrooms: number | null;
+  bedConfig: ("double" | "child" | "twoSingles" | "threeSingles" | "extraDouble" | "single")[];
+  standardCapacity: number;
+  childCapacity: number;
+  maxCapacity: number;
+  mainImage: string;
+  gallery: readonly string[];
+  bookingUrl: string;
+};
+
+export const bookingUrl = "https://www.booking.com/hotel/rs/vila-boska-palic.sr.html";
+
+export const accommodations: Accommodation[] = [
+  {
+    id: "studio-1",
+    slug: "studio-1",
+    name: "Studio 1",
+    type: "Studio",
+    bedrooms: 0,
+    bedConfig: ["double", "child"],
+    standardCapacity: 2,
+    childCapacity: 1,
+    maxCapacity: 3,
+    mainImage: accommodationImages["Studio 1"][0],
+    gallery: accommodationImages["Studio 1"],
+    bookingUrl,
+  },
+  {
+    id: "studio-2",
+    slug: "studio-2",
+    name: "Studio 2",
+    type: "Studio",
+    bedrooms: 0,
+    bedConfig: ["double", "child"],
+    standardCapacity: 2,
+    childCapacity: 1,
+    maxCapacity: 3,
+    mainImage: accommodationImages["Studio 2"][0],
+    gallery: accommodationImages["Studio 2"],
+    bookingUrl,
+  },
+  {
+    id: "apartman-3",
+    slug: "apartman-3",
+    name: "Apartman 3",
+    type: "Apartment",
+    bedrooms: 2,
+    bedConfig: ["double", "twoSingles"],
+    standardCapacity: 4,
+    childCapacity: 0,
+    maxCapacity: 4,
+    mainImage: accommodationImages["Apartman 3"][0],
+    gallery: accommodationImages["Apartman 3"],
+    bookingUrl,
+  },
+  {
+    id: "apartman-4",
+    slug: "apartman-4",
+    name: "Apartman 4",
+    type: "Apartment",
+    bedrooms: 2,
+    bedConfig: ["double", "twoSingles", "extraDouble"],
+    standardCapacity: 6,
+    childCapacity: 0,
+    maxCapacity: 6,
+    mainImage: accommodationImages["Apartman 4"][0],
+    gallery: accommodationImages["Apartman 4"],
+    bookingUrl,
+  },
+  {
+    id: "soba-5",
+    slug: "soba-5",
+    name: "Soba 5",
+    type: "Room",
+    bedrooms: 0,
+    bedConfig: ["double"],
+    standardCapacity: 2,
+    childCapacity: 0,
+    maxCapacity: 2,
+    mainImage: accommodationImages["Soba 5"][0],
+    gallery: accommodationImages["Soba 5"],
+    bookingUrl,
+  },
+  {
+    id: "soba-6",
+    slug: "soba-6",
+    name: "Soba 6",
+    type: "Room",
+    bedrooms: 0,
+    bedConfig: ["double"],
+    standardCapacity: 2,
+    childCapacity: 0,
+    maxCapacity: 2,
+    mainImage: accommodationImages["Soba 6"][0],
+    gallery: accommodationImages["Soba 6"],
+    bookingUrl,
+  },
+  {
+    id: "soba-7",
+    slug: "soba-7",
+    name: "Soba 7",
+    type: "Room",
+    bedrooms: 0,
+    bedConfig: ["threeSingles"],
+    standardCapacity: 3,
+    childCapacity: 0,
+    maxCapacity: 3,
+    mainImage: accommodationImages["Soba 7"][0],
+    gallery: accommodationImages["Soba 7"],
+    bookingUrl,
+  },
+  {
+    id: "soba-9",
+    slug: "soba-9",
+    name: "Soba 9",
+    type: "Room",
+    bedrooms: 0,
+    bedConfig: ["double"],
+    standardCapacity: 2,
+    childCapacity: 0,
+    maxCapacity: 2,
+    mainImage: accommodationImages["Soba 9"][0],
+    gallery: accommodationImages["Soba 9"],
+    bookingUrl,
+  },
+  {
+    id: "soba-10",
+    slug: "soba-10",
+    name: "Soba 10",
+    type: "Room",
+    bedrooms: 0,
+    bedConfig: ["double"],
+    standardCapacity: 2,
+    childCapacity: 0,
+    maxCapacity: 2,
+    mainImage: accommodationImages["Soba 10"][0],
+    gallery: accommodationImages["Soba 10"],
+    bookingUrl,
+  },
+  {
+    id: "apartman-12",
+    slug: "apartman-12",
+    name: "Apartman 12",
+    type: "Apartment",
+    bedrooms: 2,
+    bedConfig: ["double", "twoSingles"],
+    standardCapacity: 4,
+    childCapacity: 0,
+    maxCapacity: 4,
+    mainImage: accommodationImages["Apartman 12"][0],
+    gallery: accommodationImages["Apartman 12"],
+    bookingUrl,
+  },
+  {
+    id: "duplex-1",
+    slug: "duplex-1",
+    name: "Duplex 1",
+    type: "Duplex",
+    bedrooms: 0,
+    bedConfig: ["double", "twoSingles"],
+    standardCapacity: 4,
+    childCapacity: 0,
+    maxCapacity: 4,
+    mainImage: accommodationImages["Duplex 1"][0],
+    gallery: accommodationImages["Duplex 1"],
+    bookingUrl,
+  },
+  {
+    id: "duplex-2",
+    slug: "duplex-2",
+    name: "Duplex 2",
+    type: "Duplex",
+    bedrooms: 1,
+    bedConfig: ["double", "single"],
+    standardCapacity: 3,
+    childCapacity: 0,
+    maxCapacity: 3,
+    mainImage: accommodationImages["Duplex 2"][0],
+    gallery: accommodationImages["Duplex 2"],
+    bookingUrl,
+  },
+];
+
+export const featuredAccommodationIds = [
+  "studio-1",
+  "studio-2",
+  "apartman-3",
+  "apartman-4",
+  "soba-5",
+  "soba-6",
+];
+
+export const accommodationOptions = accommodations.map((item) => ({
+  value: item.name,
+  label: item.name,
+}));
