@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { MouseEvent } from "react";
-import { Camera, Globe, Menu, X } from "lucide-react";
+import { Camera, Globe, Menu, Phone, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const localeRoutes = {
@@ -64,33 +64,37 @@ export function Header({ locale }: { locale: string }) {
 
   return (
     <header className="relative z-50 border-b border-white/10 bg-[#354a3c] text-[#f5f0e7]">
-      <div className="container-shell flex items-center justify-between py-4">
-        <div className="hidden items-center gap-8 text-sm uppercase tracking-[0.12em] md:flex">
-          <Link href={`${homeHref}#about`} className="opacity-90 transition hover:text-[#d4c2a5]">{t("about")}</Link>
-          <Link href={offerHref} className="opacity-90 transition hover:text-[#d4c2a5]">{t("offer")}</Link>
-        </div>
-
-        <div className="flex items-center gap-3 md:hidden">
+      <div className="container-shell grid min-h-[76px] grid-cols-[1fr_auto_1fr] items-center py-3">
+        <div className="flex items-center gap-6">
           <button
             type="button"
             aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((value) => !value)}
-            className="rounded-full border border-white/20 p-2 text-[#f5f0e7]"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-[#f5f0e7] transition hover:border-[#d4c2a5] hover:text-[#d4c2a5] xl:hidden"
           >
             {mobileOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
+          <nav aria-label={t("about")} className="hidden items-center gap-7 text-xs font-medium uppercase tracking-[0.12em] xl:flex">
+            <Link href={`${homeHref}#about`} className="opacity-90 transition hover:text-[#d4c2a5]">{t("about")}</Link>
+            <Link href={offerHref} className="opacity-90 transition hover:text-[#d4c2a5]">{t("offer")}</Link>
+          </nav>
         </div>
 
-        <Link href={homeHref} className="flex flex-col items-center gap-1 text-center">
-          <span className="font-serif text-2xl tracking-[0.06em] md:text-[2.2rem]">{t("brand")}</span>
-          <span className="text-[0.55rem] uppercase tracking-[0.4em] text-[#d4c2a5] md:text-[0.6rem]">{t("brandLocation")}</span>
+        <Link href={homeHref} className="flex flex-col items-center gap-1 whitespace-nowrap text-center">
+          <span className="font-serif text-xl tracking-[0.06em] sm:text-2xl md:text-[2rem]">{t("brand")}</span>
+          <span className="text-[0.52rem] uppercase tracking-[0.4em] text-[#d4c2a5] md:text-[0.58rem]">{t("brandLocation")}</span>
         </Link>
 
-        <div className="hidden items-center gap-8 text-sm uppercase tracking-[0.12em] md:flex">
-          <Link href={galleryHref} className="opacity-90 transition hover:text-[#d4c2a5]">{t("gallery")}</Link>
-          <Link href={`${homeHref}#contact`} className="opacity-90 transition hover:text-[#d4c2a5]">{t("contact")}</Link>
-          <div className="flex items-center gap-3 border-l border-white/20 pl-4 text-[0.72rem]">
+        <div className="flex items-center justify-end gap-3">
+          <Link href={`${homeHref}#contact`} aria-label={t("contact")} className="flex h-10 w-10 items-center justify-center rounded-full border border-[#d4c2a5]/65 text-[#d4c2a5] transition hover:bg-[#d4c2a5] hover:text-[#354a3c] xl:hidden">
+            <Phone size={16} aria-hidden="true" />
+          </Link>
+          <nav aria-label={t("gallery")} className="hidden items-center gap-6 text-xs font-medium uppercase tracking-[0.12em] xl:flex">
+            <Link href={galleryHref} className="opacity-90 transition hover:text-[#d4c2a5]">{t("gallery")}</Link>
+            <Link href={`${homeHref}#contact`} className="rounded-full border border-[#d4c2a5]/70 px-4 py-2.5 text-[#f5f0e7] transition hover:bg-[#d4c2a5] hover:text-[#354a3c]">{t("contact")}</Link>
+          </nav>
+          <div aria-label={t("language")} className="hidden items-center gap-2 border-l border-white/20 pl-4 text-[0.68rem] xl:flex">
             {(["sr", "en", "hu", "ru"] as const).map((item) => (
               <Link
                 key={item}
@@ -106,7 +110,7 @@ export function Header({ locale }: { locale: string }) {
       </div>
 
       {mobileOpen ? (
-        <div className="border-t border-white/10 bg-[#354a3c] px-4 py-4 md:hidden">
+        <div className="border-t border-white/10 bg-[#354a3c] px-4 py-4 xl:hidden">
           <nav className="flex flex-col gap-4 text-sm uppercase tracking-[0.12em]">
             <Link href={`${homeHref}#about`} onClick={() => setMobileOpen(false)}>{t("about")}</Link>
             <Link href={offerHref} onClick={() => setMobileOpen(false)}>{t("offer")}</Link>

@@ -21,11 +21,17 @@ export function GalleryPreviewSection({ locale, title, subtitle, button }: { loc
           </Link>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-[repeat(2,minmax(230px,1fr))]">
           {preview.map((image, index) => (
-            <div key={`${image}-${index}`} className={`overflow-hidden rounded-[18px] border border-white/10 ${index === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
-              <Image src={image} alt={t("imageAlt")} width={index === 0 ? 1000 : 700} height={index === 0 ? 700 : 520} className="h-full min-h-[260px] w-full object-cover transition duration-500 hover:scale-[1.02]" />
-            </div>
+            <Link
+              key={`${image}-${index}`}
+              href={galleryHref}
+              aria-label={`${t("imageAlt")} ${index + 1}`}
+              className={`group relative block min-h-[220px] overflow-hidden rounded-xl border border-white/10 bg-[#18231e] ${index === 0 ? "sm:col-span-2 md:row-span-2 md:min-h-[480px]" : "md:min-h-0"}`}
+            >
+              <Image src={image} alt={t("imageAlt")} fill sizes={index === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} className="object-cover transition duration-700 group-hover:scale-[1.035]" />
+              <span className="absolute inset-0 bg-gradient-to-t from-[#101612]/35 via-transparent to-transparent opacity-70 transition group-hover:opacity-100" />
+            </Link>
           ))}
         </div>
       </div>

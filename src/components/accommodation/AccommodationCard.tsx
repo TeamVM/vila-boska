@@ -105,7 +105,7 @@ function AccommodationDetail({ accommodation, locale, onClose }: { accommodation
             <a href={accommodation.bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#354a3c] px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-[#f5f0e7] transition hover:bg-[#26382e]">
               {t("booking")} <ArrowRight size={15} aria-hidden="true" />
             </a>
-            <a href={`/${locale}?unit=${accommodation.slug}#contact`} onClick={onClose} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#a94f3c] bg-[#a94f3c] px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-[#bb5d49]">
+            <a href={`/${locale}?unit=${accommodation.slug}#contact-form`} onClick={onClose} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#a94f3c] bg-[#a94f3c] px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-[#bb5d49]">
               {t("inquiry")} <ArrowRight size={15} aria-hidden="true" />
             </a>
           </div>

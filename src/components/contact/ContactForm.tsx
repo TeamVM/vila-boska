@@ -43,12 +43,18 @@ export function ContactForm() {
     const selected = new URLSearchParams(window.location.search).get("unit");
     if (!selected) return;
 
-    const bySlug = accommodations.find((item) => item.slug === selected)?.name;
-    setValue("accommodation", bySlug || selected);
+    const unit = accommodations.find((item) => item.slug === selected || item.name === selected);
+    if (!unit) return;
+
+    setValue("accommodation", unit.name);
+    setValue("adults", unit.standardCapacity);
+    setValue("children", unit.childCapacity);
+    document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [setValue]);
 
   const selectedAccommodation = watch("accommodation");
   const selectedLimits = unitCapacityMap.get(selectedAccommodation) ?? { adults: 6, children: 2 };
+  const accommodationField = register("accommodation");
 
   const onSubmit = async (data: FormValues) => {
     setSubmitting(true);
@@ -134,7 +140,7 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form id="contact-form" onSubmit={handleSubmit(onSubmit)} className="scroll-mt-6 space-y-4">
       <div>
         <label className="mb-2 block text-sm text-[#282a26]">{t("fullName")}</label>
         <input {...register("fullName")} className="w-full rounded-xl border border-[#354a3c]/15 bg-[#f2eee7] px-3 py-3 outline-none ring-0 transition focus:border-[#a94f3c]" placeholder={t("namePlaceholder")} />
@@ -148,7 +154,14 @@ export function ContactForm() {
 
       <div>
         <label className="mb-2 block text-sm text-[#282a26]">{t("unit")} *</label>
-        <select {...register("accommodation")} className="w-full rounded-xl border border-[#354a3c]/15 bg-[#f2eee7] px-3 py-3 outline-none transition focus:border-[#a94f3c]">
+        <select {...accommodationField} onChange={(event) => {
+          accommodationField.onChange(event);
+          const unit = accommodations.find((item) => item.name === event.target.value);
+          if (unit) {
+            setValue("adults", unit.standardCapacity);
+            setValue("children", unit.childCapacity);
+          }
+        }} className="w-full rounded-xl border border-[#354a3c]/15 bg-[#f2eee7] px-3 py-3 outline-none transition focus:border-[#a94f3c]">
           <option value="">{t("unitPlaceholder")}</option>
           {accommodations.map((item) => (
             <option key={item.id} value={item.name}>{tAccommodation(`units.${item.id}`)}</option>
